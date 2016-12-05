@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 			if (mMediaPlayerOne.isPlaying())
 				mMediaPlayerOne.stop();
 			mMediaPlayerOne.reset();
-			mMediaPlayerOne.reset();
+			mMediaPlayerOne.release();
 			mMediaPlayerOne = null;
 		}
 
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
 			if (mMediaPlayerOther.isPlaying())
 				mMediaPlayerOther.stop();
 			mMediaPlayerOther.reset();
-			mMediaPlayerOther.reset();
+			mMediaPlayerOther.release();
 			mMediaPlayerOther = null;
 		}
 	}
